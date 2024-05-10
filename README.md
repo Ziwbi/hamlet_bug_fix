@@ -28,7 +28,7 @@ Alternatively you can download the mod as a ZIP file and extract the contents to
 
 You can also use run this command in terminal:
 ```
-$ git clone https://github.com/ziwbi/hamlet_bug_fix/ <path/to/your/mods/folder>
+$ git clone https://github.com/Ziwbi/hamlet_bug_fix <path/to/dont_starve/mods/a_new_folder_name/>
 ```
     
 ## License
