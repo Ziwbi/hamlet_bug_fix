@@ -1,8 +1,8 @@
-name = ChooseTranslationTable({"Hamlet Script Bug Fixes", zh = "猪镇bug补丁"})
+name = ChooseTranslationTable({"Hamlet Script Bug Fixes", zh = "猪镇代码补丁"})
 description = ChooseTranslationTable({"Fix bugs", zh = "修bug"})
 author = "ziwbi"
 
-version = "1.0"
+version = "1.0.1"
 api_version = 6
 dont_starve_compatible = true
 reign_of_giants_compatible = true

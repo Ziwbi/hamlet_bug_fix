@@ -15,7 +15,7 @@ Here is a list of changes made by this mod:
 - Fixed the respawn timer for piko using the wrong value. It is now 4 days instead of 10 seconds;
 - Fixed the Pugalisk getting stuck in ground forever when it tries to taunt;
 - Fixed snake not returning to its home when day comes in Hamlet-compatible worlds;
-- Fixed the player not automatically leaving the work state while using the living artiface;
+- Fixed the player not automatically leaving the work state while using the living artifact;
 - Changed pangolden's stategraph name from "beefalo" to "pangolden";
 
 Details about the issues above can be found on the Klei bug tracker page: https://forums.kleientertainment.com/klei-bug-tracker/dont-starve/. Or my klei forums profile page, as I have reported all of those: https://forums.kleientertainment.com/profile/1401991-_zwb/content/?type=cms_records4&change_section=1
