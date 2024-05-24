@@ -18,7 +18,7 @@ Here is a list of changes made by this mod:
 - Fixed the player not automatically leaving the work state while using the living artifact;
 - Changed pangolden's stategraph name from "beefalo" to "pangolden";
 
-Details about the issues above can be found on the Klei bug tracker page: https://forums.kleientertainment.com/klei-bug-tracker/dont-starve/. Or my klei forums profile page, as I have reported all of those: https://forums.kleientertainment.com/profile/1401991-_zwb/content/?type=cms_records4&change_section=1
+Details about the issues above can be found on the Klei bug tracker page: https://forums.kleientertainment.com/klei-bug-tracker/dont-starve/. Or my klei forums profile page, as I have reported most of those: https://forums.kleientertainment.com/profile/1401991-_zwb/content/?type=cms_records4&change_section=1
 
 ## Installation
 

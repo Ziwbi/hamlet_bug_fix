@@ -21,6 +21,10 @@ if not IsDLCEnabled(PORKLAND_DLC) then
     return
 end
 
+local component_postinits = {
+    "periodicthreat",
+}
+
 local prefab_postinits = {
     "hippopotamoose",
     "lotus",
@@ -36,6 +40,10 @@ local stategraph_postinits = {
     "pangolden",
 }
 
+for _, component in pairs(component_postinits) do
+    modenv.modimport(string.format("postinit/components/%s.lua", component))
+end
+
 for _, prefab in pairs(prefab_postinits) do
     modenv.modimport(string.format("postinit/prefabs/%s.lua", prefab))
 end
@@ -43,6 +51,9 @@ end
 for _, stategraph in pairs(stategraph_postinits) do
     modenv.modimport(string.format("postinit/stategraphs/SG%s.lua", stategraph))
 end
+
+--[[ Component Bug Fixes ]]--
+--- https://forums.kleientertainment.com/klei-bug-tracker/dont-starve/depths-worms-attacks-spawn-inside-slanty-shanty-r44744/
 
 --[[ Prefab Bug Fixes ]]--
 --- https://forums.kleientertainment.com/klei-bug-tracker/dont-starve/hippopotamoose-changes-state-while-jumping-across-landwater-r43998/
