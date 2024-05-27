@@ -6,7 +6,7 @@ local PeriodicThreat = require("components/periodicthreat")
 local _GoToNextState = PeriodicThreat.GoToNextState
 function PeriodicThreat:GoToNextState(key)
     -- #FIXES https://forums.kleientertainment.com/klei-bug-tracker/dont-starve/depths-worms-attacks-spawn-inside-slanty-shanty-r44744/
-    if key == "WORM" and not TheCamera.interior then
+    if not key == "WORM" or not TheCamera.interior then
         _GoToNextState(self, key)
     end
 

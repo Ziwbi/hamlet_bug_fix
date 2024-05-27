@@ -22,6 +22,7 @@ if not IsDLCEnabled(PORKLAND_DLC) then
 end
 
 local component_postinits = {
+    "inventory",
     "periodicthreat",
 }
 
@@ -54,6 +55,7 @@ end
 
 --[[ Component Bug Fixes ]]--
 --- https://forums.kleientertainment.com/klei-bug-tracker/dont-starve/depths-worms-attacks-spawn-inside-slanty-shanty-r44744/
+--- https://forums.kleientertainment.com/klei-bug-tracker/dont-starve/oincs-arent-properly-consumed-if-placed-in-a-chest-r43644/
 
 --[[ Prefab Bug Fixes ]]--
 --- https://forums.kleientertainment.com/klei-bug-tracker/dont-starve/hippopotamoose-changes-state-while-jumping-across-landwater-r43998/
