@@ -7,14 +7,13 @@ local Inventory = require("components/inventory")
 
 -- #FIXES https://forums.kleientertainment.com/klei-bug-tracker/dont-starve/oincs-arent-properly-consumed-if-placed-in-a-chest-r43644/
 function Inventory:ConsumeByName(item, amount, check_all_containers)
-
     local total_num_found = 0
 
     local function try_consume(v)
-        if not v or not v.prefab == item then
-            return
-        end
         local num_found = 0
+        if not v or v.prefab ~= item then
+            return num_found
+        end
 
         local num_left_to_find = amount - total_num_found
         if v.components.stackable then
