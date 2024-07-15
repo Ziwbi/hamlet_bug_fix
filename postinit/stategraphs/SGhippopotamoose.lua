@@ -16,7 +16,7 @@ modenv.AddStategraphPostInit("hippopotamoose", function(sg)
             inst:DoTaskInTime(math.max(inst.components.groundpounder.numRings - 1, 0) * inst.components.groundpounder.ringDelay, function()
                 if not inst.components.groundpounder.ignoreEnts or not next(inst.components.groundpounder.ignoreEnts) then
                     -- #FIXES https://forums.kleientertainment.com/klei-bug-tracker/dont-starve/onmissother-event-does-not-trigger-with-hippopotamooses-leap-attack-r44676/
-                    inst:PushEvent("onmissother")
+                    inst:PushEvent("onmissother", {})
                 end
             end)
         end
