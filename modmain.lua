@@ -22,11 +22,14 @@ if not IsDLCEnabled(PORKLAND_DLC) then
 end
 
 local component_postinits = {
+    "banditmanager",
     "inventory",
     "periodicthreat",
 }
 
 local prefab_postinits = {
+    "banditmap",
+    "gnatmound",
     "hippopotamoose",
     "lotus",
     "piko",
@@ -53,11 +56,15 @@ for _, stategraph in pairs(stategraph_postinits) do
     modenv.modimport(string.format("postinit/stategraphs/SG%s.lua", stategraph))
 end
 
+modenv.modimport("postinit/recipes.lua")
+
 --[[ Component Bug Fixes ]]--
+--- https://forums.kleientertainment.com/klei-bug-tracker/dont-starve/masked-pig-leaves-oincs-at-0-0-0-r45921/
 --- https://forums.kleientertainment.com/klei-bug-tracker/dont-starve/depths-worms-attacks-spawn-inside-slanty-shanty-r44744/
 --- https://forums.kleientertainment.com/klei-bug-tracker/dont-starve/oincs-arent-properly-consumed-if-placed-in-a-chest-r43644/
 
 --[[ Prefab Bug Fixes ]]--
+--- https://forums.kleientertainment.com/klei-bug-tracker/dont-starve/gnat-mound-is-burnable-r45938/
 --- https://forums.kleientertainment.com/klei-bug-tracker/dont-starve/hippopotamoose-changes-state-while-jumping-across-landwater-r43998/
 --- https://forums.kleientertainment.com/klei-bug-tracker/dont-starve/platapines-might-not-spawn-at-the-right-position-r44002/
 --- https://forums.kleientertainment.com/klei-bug-tracker/dont-starve/piko-keeps-combat-target-forever-r43839/
@@ -71,3 +78,7 @@ end
 --- https://forums.kleientertainment.com/klei-bug-tracker/dont-starve/player-wouldnt-exit-work-state-automatically-while-using-the-living-artifact-r44627/
 --- https://forums.kleientertainment.com/klei-bug-tracker/dont-starve/onmissother-event-does-not-trigger-with-hippopotamooses-leap-attack-r44676/
 --- https://forums.kleientertainment.com/klei-bug-tracker/dont-starve/wrong-stategraph-name-for-pangolden-r43840/
+
+
+--[[ Other Bug Fixes ]]--
+--- https://forums.kleientertainment.com/klei-bug-tracker/dont-starve/deco_plantholder_winterfeasttree-and-deco_plantholder_winterfeasttreeofsadness-cant-be-crafted-r45905/
